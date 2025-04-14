@@ -18,19 +18,19 @@ import (
 	"github.com/hashicorp/cli"
 	"github.com/hashicorp/go-plugin"
 	"github.com/hashicorp/terraform-svchost/disco"
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/cliconfig"
-	"github.com/hashicorp/terraform/internal/command/format"
-	"github.com/hashicorp/terraform/internal/didyoumean"
-	"github.com/hashicorp/terraform/internal/httpclient"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/terminal"
+	"github.com/hashicorp/terraform/external/addrs"
+	"github.com/hashicorp/terraform/external/command/cliconfig"
+	"github.com/hashicorp/terraform/external/command/format"
+	"github.com/hashicorp/terraform/external/didyoumean"
+	"github.com/hashicorp/terraform/external/httpclient"
+	"github.com/hashicorp/terraform/external/logging"
+	"github.com/hashicorp/terraform/external/terminal"
 	"github.com/hashicorp/terraform/version"
 	"github.com/mattn/go-shellwords"
 	"github.com/mitchellh/colorstring"
 	"go.opentelemetry.io/otel/trace"
 
-	backendInit "github.com/hashicorp/terraform/internal/backend/init"
+	backendInit "github.com/hashicorp/terraform/external/backend/init"
 )
 
 const (
